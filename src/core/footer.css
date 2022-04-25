@@ -1,0 +1,28 @@
+.footer-container {
+  background-color: rgb(145, 53, 53);
+  padding-top: 10px;
+}
+.footer {
+  padding: 60px;
+  background-color: #23272a;
+}
+.footer-div2-big {
+  padding: 0px 0px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+}
+
+.list-head {
+  padding: 5px 0px;
+  color: white;
+  font-size: 13px;
+}
+.list-ul {
+  margin: 0px 60px;
+  list-style: none;
+}
+
+.item {
+  color: grey;
+}

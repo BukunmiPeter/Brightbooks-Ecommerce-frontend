@@ -1,0 +1,43 @@
+.filter {
+  margin-bottom: 20px;
+}
+.filter-inbox {
+  background-color: rgb(145, 53, 53);
+  width: 300px;
+}
+.filter-price {
+  padding-left: 0px;
+}
+
+.checkbox {
+  background-color: grey;
+  color: white;
+  width: 300px;
+}
+
+.radiobox {
+  background-color: grey;
+  color: white;
+  width: 300px;
+}
+
+.filter-text-title {
+  padding: 10px 10px;
+  color: white;
+}
+
+.bookshelves-text-div {
+  background-color: rgb(145, 53, 53);
+}
+.bookshelves-text {
+  color: white;
+}
+
+.see-more-btn {
+  border-radius: 10px;
+  border: none;
+  background-color: #a89532;
+  margin-bottom: 40px;
+  height: 40px;
+  width: 200px  ;
+}

@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 17px;
+}
+
+.logo {
+}
+
+.menu-container {
+  background-color: rgb(224, 229, 230);
+  padding: 15px 40px;
+}
+.u-list-div {
+}
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop-text {
+  padding-left: 10px;
+}
+
+.cart-text {
+  padding: 0 5px;
+}
+.u-list-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}

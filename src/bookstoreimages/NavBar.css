@@ -1,0 +1,39 @@
+.NavItemcontainer{
+    background-color: white;
+    color: black;
+}
+
+.navbarItems{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9rem 2rem;
+}
+
+.navmene{
+    display: flex;
+    margin: 1rem;
+    
+}
+
+.navLogo{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.home, .loginButton , .chaticon{
+    padding: 0 2rem;
+    font-size: 0.9rem;
+}
+
+
+.loginButton button{
+background-color: black;
+color: white;
+padding: 0.24rem 1rem;
+border: none;
+border-radius: 20px;
+
+}

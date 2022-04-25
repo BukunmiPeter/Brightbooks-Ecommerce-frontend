@@ -1,0 +1,56 @@
+.new-product-text {
+  text-align: center;
+  font-size: 30px;
+  margin: 30px;
+}
+
+.bestseller {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.new-product-text-div {
+}
+
+.image-div-container {
+  height: 350px;
+  width: 100%;
+  display: flex;
+  background-color: rgb(224, 229, 230);
+  padding: 40px;
+}
+
+.home-image-div {
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("carousel1.jpg");
+}
+.text-bg {
+  padding: 90px 0 0 350px;
+  color: white;
+  font-size: 90px;
+}
+
+.text-bg2 {
+  padding: 0px 0 0 270px;
+  color: white;
+  font-size: 40px;
+}
+
+.arrival-products {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 40px;
+}
+
+.sold-products {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 40px;
+}
+
+.homeimage {
+}

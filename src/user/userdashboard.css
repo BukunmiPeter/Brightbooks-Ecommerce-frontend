@@ -1,0 +1,15 @@
+.welcome-div {
+  background-color: rgb(145, 53, 53);
+}
+
+.welcome-text {
+  color: white;
+}
+
+.list-group-item {
+  height: 40px;
+}
+
+.purchase-card {
+  margin: 20px 0px 40px 0px;
+}

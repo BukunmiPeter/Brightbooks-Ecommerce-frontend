@@ -1,0 +1,21 @@
+.cart-status-div {
+  background-color: rgb(145, 53, 53);
+}
+
+.cart-status {
+  padding-left: 20px;
+  color: white;
+}
+
+.cart-summary-text-div {
+  background-color: rgb(145, 53, 53);
+}
+
+.cart-summary-text {
+  padding-left: 20px;
+  color: white;
+}
+
+.cart-item-container {
+  margin-bottom: 50px;
+}

@@ -1,0 +1,19 @@
+.product-title {
+  background-color: rgb(145, 53, 53);
+  max-width: 700px;
+  padding-left: 20px;
+}
+
+.p-text {
+  color: white;
+}
+
+.related-text-div {
+  background-color: rgb(145, 53, 53);
+  max-width: 300px;
+  padding-left: 40px;
+}
+
+.related-text {
+  color: white;
+}

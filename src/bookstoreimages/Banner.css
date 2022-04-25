@@ -1,0 +1,37 @@
+.bannerconetent{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 70vh;
+}
+
+.bannerimage img{
+    height: 100vh;
+}
+.orgainicProduct{
+    padding: 0 2rem;
+}
+.orgainicProduct h1{
+    font-weight: bolder;
+}
+
+.orgainicProduct span{
+    font-size: 2rem;
+}
+
+.orgainicProduct p{
+    font-weight: 600;
+}
+
+.orgainicProduct button{
+    padding: 0.75rem 1.5rem;
+    background-color: black;
+    font-size: 1.1rem;
+    border-radius: 0 30px 30px 30px;
+    border: none;
+    color: white
+}
+
+.orgainicProduct button > svg{
+    font-size: 1.1rem;
+}
