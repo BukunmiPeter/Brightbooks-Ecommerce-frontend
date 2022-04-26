@@ -16,26 +16,34 @@
 .image-div-container {
   height: 350px;
   width: 100%;
-  display: flex;
   background-color: rgb(224, 229, 230);
   padding: 40px;
 }
 
 .home-image-div {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
   height: 300px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("carousel1.jpg");
 }
+
+.textbg-div {
+  margin: 0 auto;
+}
 .text-bg {
-  padding: 90px 0 0 350px;
   color: white;
   font-size: 90px;
 }
 
+.text-bg-2-div {
+  margin: 0 auto;
+}
+
 .text-bg2 {
-  padding: 0px 0 0 270px;
   color: white;
   font-size: 40px;
 }
