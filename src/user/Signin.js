@@ -100,7 +100,7 @@ const Signin = () => {
 
   return (
     <Layout className="f">
-      <div className="signin-container">
+      <div className="container col-md-6 offset-md-3  ">
         <div>
           <h5> LOGIN IN</h5>
           <p>

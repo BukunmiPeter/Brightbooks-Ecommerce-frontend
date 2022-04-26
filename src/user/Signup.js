@@ -96,7 +96,7 @@ const Signup = () => {
 
   return (
     <Layout className="">
-      <div className="signup-container">
+      <div className="container col-md-6 offset-md-3 ">
         <div>
           <h5>REGISTER ACCOUNT</h5>
           <hr />
