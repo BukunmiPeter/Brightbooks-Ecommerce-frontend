@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import Layout from "../core/Layout";
 import { isAuthenticated } from "../auth";
 import { Link } from "react-router-dom";
+import "./orders.css";
 import { listOrders, getStatusValues, updateOrderStatus } from "./apiAdmin";
 import moment from "moment";
+import Footer from "../core/Footer";
 
 const Orders = () => {
   const [orders, setOrders] = useState([]);
@@ -39,10 +41,10 @@ const Orders = () => {
   const showOrdersLength = () => {
     if (orders.length > 0) {
       return (
-        <h1 className="text-danger display-2">Total orders: {orders.length}</h1>
+        <h4 className="text-danger display-2">Total orders: {orders.length}</h4>
       );
     } else {
-      return <h1 className="text-danger">No orders</h1>;
+      return <h4 className="text-danger">No orders</h4>;
     }
   };
 
@@ -51,7 +53,16 @@ const Orders = () => {
       <div className="input-group-prepend">
         <div className="input-group-text">{key}</div>
       </div>
-      <input type="text" value={value} className="form-control" readOnly />
+      <input
+        type="text"
+        value={value}
+        className="form-control"
+        style={{
+          padding: "5px",
+          width: "100px",
+        }}
+        readOnly
+      />
     </div>
   );
 
@@ -66,28 +77,32 @@ const Orders = () => {
   };
 
   const showStatus = (o) => (
-    <div className="form-group">
-      <h3 className="mark mb-4">Status: {o.status}</h3>
-      <select
-        className="form-control"
-        onChange={(e) => handleStatusChange(e, o._id)}
-      >
-        <option>Update Status</option>
-        {statusValues.map((status, index) => (
-          <option key={index} value={status}>
-            {status}
-          </option>
-        ))}
-      </select>
+    <div className="form-group status-container">
+      <h5 className="mark mb-4">Status: {o.status}</h5>
+      <div>
+        <select
+          className="form-control"
+          onChange={(e) => handleStatusChange(e, o._id)}
+        >
+          <option>Update Status</option>
+          {statusValues.map((status, index) => (
+            <option key={index} value={status}>
+              {status}
+            </option>
+          ))}
+        </select>
+      </div>
     </div>
   );
 
   return (
-    <Layout
-      title="Orders"
-      description={`G'day ${user.name}, you can manage all the orders here`}
-      className="container-fluid"
-    >
+    <Layout className="container-fluid">
+      <div className="welcome-text-div">
+        <h4 className="welcome-text">
+          {" "}
+          {`Hello ${user.name}, you can manage all the orders here.`}
+        </h4>
+      </div>
       <div className="row">
         <div className="col-md-8 offset-md-2">
           {showOrdersLength()}
@@ -128,6 +143,7 @@ const Orders = () => {
                     key={pIndex}
                     style={{
                       padding: "20px",
+
                       border: "1px solid indigo",
                     }}
                   >
@@ -142,6 +158,7 @@ const Orders = () => {
           })}
         </div>
       </div>
+      <Footer />
     </Layout>
   );
 };

@@ -13,7 +13,7 @@ const AdminDashboard = () => {
   const adminLinks = () => {
     return (
       <div className="card">
-        <h4 className="card-header">Admin Links</h4>
+        <h4 className="">Admin Links</h4>
         <ul className="list-group">
           <li className="list-group-item">
             <Link className="nav-link" to="/create/category">
@@ -22,7 +22,7 @@ const AdminDashboard = () => {
           </li>
           <li className="list-group-item">
             <Link className="nav-link" to="/create/product">
-              Create Product
+              Add Book
             </Link>
           </li>
           <li className="list-group-item">
@@ -32,7 +32,7 @@ const AdminDashboard = () => {
           </li>
           <li className="list-group-item">
             <Link className="nav-link" to="/admin/products">
-              Manage Products
+              Manage Books
             </Link>
           </li>
         </ul>
@@ -43,7 +43,7 @@ const AdminDashboard = () => {
   const adminInfo = () => {
     return (
       <div className="card mb-5">
-        <h3 className="card-header">User Information</h3>
+        <h3 className="">User Information</h3>
         <ul className="list-group">
           <li className="list-group-item">{name}</li>
           <li className="list-group-item">{email}</li>
@@ -56,10 +56,13 @@ const AdminDashboard = () => {
   };
 
   return (
-    <Layout description={`G'day ${name}!`} className="container-fluid">
-      <div className=" fullpage row  ">
-        <div className="  col-4 adminlink">{adminLinks()}</div>
-        <div className="col-8">{adminInfo()}</div>
+    <Layout className="container-fluid">
+      <div className="welcome-div">
+        <h4 className="welcome-text">{`Hello ${name}!`}</h4>
+      </div>
+      <div className="container">
+        <div className="  col-3 adminlink">{adminLinks()}</div>
+        <div className="col-9">{adminInfo()}</div>
       </div>
       <div>
         <Footer />

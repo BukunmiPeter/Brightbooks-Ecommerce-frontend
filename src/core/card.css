@@ -62,15 +62,7 @@
   width: 150px;
   border: 0ch;
   height: 30px;
-  margin: 10px 20px 10px 70px;
-}
-
-.adjust-quabtn {
-  background-color: green;
-  border-radius: 20px;
-  width: 150px;
-  border: none;
-  height: 30px;
+  margin: 10px 20px 10px 30px;
 }
 
 .adjust-btninput--div {
@@ -79,8 +71,9 @@
   justify-content: center;
   background-color: rgb(153, 202, 153);
   border-radius: 10px;
-  margin: 0 40px;
+  margin: 0 15px;
   height: 40px;
+  width: 200px;
 }
 
 .adjust-input {
@@ -91,4 +84,5 @@
 
 .adjquan-text {
   padding: 7px 10px;
+  font-size: 15px;
 }

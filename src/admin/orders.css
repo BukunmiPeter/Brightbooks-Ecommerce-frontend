@@ -1,0 +1,15 @@
+.welcome-text-div {
+  background-color: rgb(145, 53, 53);
+}
+
+.welcome-text {
+  color: white;
+}
+
+.status-container {
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: space-between;
+}

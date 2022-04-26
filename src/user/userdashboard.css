@@ -1,5 +1,18 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .welcome-div {
   background-color: rgb(145, 53, 53);
+  height: 40px;
 }
 
 .welcome-text {
@@ -10,6 +23,15 @@
   height: 40px;
 }
 
-.purchase-card {
-  margin: 20px 0px 40px 0px;
+.userlink {
+  width: 40%;
+  max-width: 400px;
+}
+
+.userinfo {
+  width: 4000px;
+  /* max-width: 600px; */
+}
+
+.card {
 }

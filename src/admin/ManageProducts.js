@@ -3,6 +3,8 @@ import Layout from "../core/Layout";
 import { isAuthenticated } from "../auth";
 import { Link } from "react-router-dom";
 import { getProducts, deleteProduct } from "./apiAdmin";
+import "./managebooks.css";
+import Footer from "../core/Footer";
 
 const ManageProducts = () => {
   const [products, setProducts] = useState([]);
@@ -34,29 +36,34 @@ const ManageProducts = () => {
   }, []);
 
   return (
-    <Layout
-      title="Manage Products"
-      description="Perform CRUD on products"
-      className="container-fluid"
-    >
+    <Layout className="">
       <div className="row">
-        <div className="col-12">
-          <h2 className="text-center">Total {products.length} products</h2>
+        <div className=" col-12 ">
+          <div className="total-books">
+            <h2 className="text-center">Total Books: {products.length}</h2>
+          </div>
+
           <hr />
-          <ul className="list-group">
+          <ol className="list-group container-list">
             {products.map((p, i) => (
               <li key={i}>
                 <strong>{p.name}</strong>
-                <Link to={`/admin/product/update/${p._id}`}>
-                  <p>Update</p>
-                </Link>
-                <span onClick={() => destroy(p._id)}>Delete</span>
+
+                <div className="update-delete-btn-div">
+                  <Link to={`/admin/product/update/${p._id}`}>
+                    <p>Update</p>
+                  </Link>
+                  <span className="delete-btn" onClick={() => destroy(p._id)}>
+                    Delete
+                  </span>
+                </div>
               </li>
             ))}
-          </ul>
+          </ol>
           <br />
         </div>
       </div>
+      <Footer />
     </Layout>
   );
 };

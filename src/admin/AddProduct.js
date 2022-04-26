@@ -3,6 +3,8 @@ import Layout from "../core/Layout";
 import { isAuthenticated } from "../auth";
 import { Link } from "react-router-dom";
 import { createProduct, getCategories } from "./apiAdmin";
+import "./addProduct.css";
+import Footer from "../core/Footer";
 
 const AddProduct = () => {
   const [values, setValues] = useState({
@@ -189,10 +191,10 @@ const AddProduct = () => {
     );
 
   return (
-    <Layout
-      title="Add a new product"
-      description={`G'day ${user.name}, ready to add a new product?`}
-    >
+    <Layout>
+      <div className="welcome-text-div">
+        <h4 className="welcome-text">{`Hello ${user.name}, you can add a new product?`}</h4>
+      </div>
       <div
         className="row"
         onBlur={() => setValues({ ...values, createdProduct: "" })}
@@ -204,6 +206,7 @@ const AddProduct = () => {
           {newPostForm()}
         </div>
       </div>
+      <Footer />
     </Layout>
   );
 };

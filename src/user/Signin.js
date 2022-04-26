@@ -59,7 +59,7 @@ const Signin = () => {
           value={password}
         />
       </div>
-      <button onClick={clickSubmit} className="btn btn-primary">
+      <button onClick={clickSubmit} className="btn btn-primary mb-4">
         Submit
       </button>
     </form>
@@ -100,7 +100,7 @@ const Signin = () => {
 
   return (
     <Layout className="f">
-      <div className="container col-md-6 offset-md-3  ">
+      <div className="col-md-6 offset-md-3  ">
         <div>
           <h5> LOGIN IN</h5>
           <p>

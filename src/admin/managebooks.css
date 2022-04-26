@@ -1,0 +1,21 @@
+.total-books {
+  background-color: rgb(145, 53, 53);
+}
+
+.text-center {
+  color: white;
+}
+
+.update-delete-btn-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.delete-btn {
+  padding-left: 30px;
+}
+
+.container-list {
+  padding: 40px;
+}

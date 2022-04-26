@@ -1,7 +1,17 @@
-.fullpage {
+.container {
+  display: flex;
+  flex-direction: row;
   min-height: 300px;
 }
 
 .adminlink {
   width: 500px;
+}
+
+.welcome-div {
+  background-color: rgb(145, 53, 53);
+}
+
+.welcome-text {
+  color: white;
 }

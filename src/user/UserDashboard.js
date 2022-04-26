@@ -31,8 +31,11 @@ const Dashboard = () => {
 
   const userLinks = () => {
     return (
-      <div className="user-link-box">
-        <h4 className="card-">User Links</h4>
+      <div
+        className="card col-4"
+        style={{ width: "300px", margin: "40px 50px" }}
+      >
+        <h4 className="">User Links</h4>
         <ul className="user-link-list">
           <li className="list-group-item">
             <Link className="nav-link" to="/cart">
@@ -51,8 +54,11 @@ const Dashboard = () => {
 
   const userInfo = () => {
     return (
-      <div className="info-box">
-        <h3 className="info-box-title">User Information</h3>
+      <div
+        className="card userinfo col-8 "
+        style={{ width: "500px", margin: "40px 50px" }}
+      >
+        <h3 className="">User Information</h3>
         <ul className="list-group">
           <li className="list-group-item">{name}</li>
           <li className="list-group-item">{email}</li>
@@ -68,9 +74,9 @@ const Dashboard = () => {
     console.log(history);
     return (
       <div className="card mb-5">
-        <h3 className="">Purchase history</h3>
+        <h4 className="">Purchase history</h4>
         <ul className="list-group">
-          <li className="list-group-item">
+          <li className="">
             {history.map((h, i) => {
               return (
                 <div>
@@ -80,6 +86,7 @@ const Dashboard = () => {
                         <h6>Product name: {p.name}</h6>
                         <h6>Product price: ${p.price}</h6>
                         <h6>Purchased date: {moment(p.createdAt).fromNow()}</h6>
+                        <hr />
                       </div>
                     );
                   })}
@@ -94,16 +101,21 @@ const Dashboard = () => {
 
   return (
     <Layout className="">
-      <div className="welcome-div">
-        <h1 className="welcome-text">{`Welcome ${name}!`} </h1>
-      </div>
-      <div className="row">
-        <div className="col-4">{userLinks()}</div>
-        <div className="col-8">
-          {userInfo()}
-          {purchaseHistory(history)}
+      <div className="flex-container">
+        <div className="welcome-div">
+          <h1 className="welcome-text">{`Welcome ${name}!`} </h1>
+        </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-4">{userLinks()}</div>
+            <div className="col-8">
+              {userInfo()}
+              {purchaseHistory(history)}
+            </div>
+          </div>
         </div>
       </div>
+
       <Footer />
     </Layout>
   );

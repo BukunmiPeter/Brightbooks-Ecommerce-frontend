@@ -70,7 +70,7 @@ const Signup = () => {
           value={password}
         />
       </div>
-      <button onClick={clickSubmit} className="btn btn-primary">
+      <button onClick={clickSubmit} className="btn btn-primary mb-4">
         Submit
       </button>
     </form>
@@ -96,7 +96,7 @@ const Signup = () => {
 
   return (
     <Layout className="">
-      <div className="container col-md-6 offset-md-3 ">
+      <div className=" col-md-6 offset-md-3  ">
         <div>
           <h5>REGISTER ACCOUNT</h5>
           <hr />

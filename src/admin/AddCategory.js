@@ -3,6 +3,9 @@ import Layout from "../core/Layout";
 import { isAuthenticated } from "../auth";
 import { Link } from "react-router-dom";
 import { createCategory } from "./apiAdmin";
+import "./addCategory.css";
+
+import Footer from "../core/Footer";
 
 const AddCategory = () => {
   const [name, setName] = useState("");
@@ -70,10 +73,10 @@ const AddCategory = () => {
   );
 
   return (
-    <Layout
-      title="Add a new category"
-      description={`Hello ${user.name}, ready to add a new category?`}
-    >
+    <Layout>
+      <div className="welcome-text-div">
+        <h4 className="welcome-text">{`Hello ${user.name}, you can add a new category.`}</h4>
+      </div>
       <div className="row">
         <div className="col-md-8 offset-md-2">
           {showSuccess()}
@@ -82,6 +85,7 @@ const AddCategory = () => {
           {goBack()}
         </div>
       </div>
+      <Footer />
     </Layout>
   );
 };
