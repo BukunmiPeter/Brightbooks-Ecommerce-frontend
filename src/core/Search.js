@@ -121,7 +121,7 @@ const Search = () => {
     <div className="welcome-search-container">
       <div className="welcome-div">
         <p className="welcome-text">
-          Welcome to The Brightbooks... High class online bookshop.
+          Welcome to The Brightbooks... The preferred online bookstore.
         </p>
       </div>
 
