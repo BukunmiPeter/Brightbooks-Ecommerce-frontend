@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+## Introduction:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Brightbooks is a functional MERN Stack Ecommerce bookstore web App where Admin and Customers have different dashboards to interact with the app. The App has the following special features:
+a. User friendly Home Page with Bestellers books and newly added books (New products)
+b.Admin can add books, update books, add categories of books.
+c. Admin can manage the orders with update options of "Shipped", "Delivered", "Cancelled", "processed" or "not processed".
+d.Customers can view book details ( Price, Author, description).
+e. Customers can add and remove books from cart
+f. Customers can make payment using their Bank Cards or PayPal Accounts.
+g. Customers can filter books by category and price range
+h. Customers can see their purchase history
 
-## Available Scripts
+_Hosting Server: DigitalOcean._
+App website: brightbooks.com.ng
 
-In the project directory, you can run:
+Requirements
+In order to run Brightbooks you will need the following server configurations for hosted and local serves. The system compatibility will also be checked by the system with installation and if the server is not compatible then the installation will not move ahead.
 
-### `npm start`
+```javascript
+Client Rendering:React,
+Node version: 5.0+
+Mongo version: 5.0+ and below 5.7 installed with a database created
+SSH or FTP access (ask your hosting service for your credentials)
+SSL certificate if you plan to process payments internally (Card and Bank Card PayPal for instance)
+Required PHP extensions: cURL, SimpleXML, SOAP
+Local Server Configurations
+Supported operating system: Windows, Mac, and Linux
+Required Node extensions: Rest API (postman)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Front Page
 
-### `npm test`
+![Frontpage](2.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Admin Dashboard
 
-### `npm run build`
+![Admin](1.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## User Dashboard
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![user](3.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Cart and payment Page
 
-### `npm run eject`
+![user](4.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Shop Page
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![user](5.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contribute
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+A MERN Stack developer who has command on Node and Mongo and also knows how to use Git or GitHub efficiently, can contribute to code enhancements via pull requests.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Credits @GMTsoftware
